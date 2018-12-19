@@ -3,14 +3,15 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ChatElementComponent } from './chat-element.component';
 import {FormsModule} from '@angular/forms';
 
-describe('ChatFormulaireComponent', () => {
+
+
+describe('ChatElementComponent', () => {
   let component: ChatElementComponent;
   let fixture: ComponentFixture<ChatElementComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChatElementComponent ],
-      imports: [FormsModule]
+      declarations: [ ChatElementComponent ]
     })
     .compileComponents();
   }));
