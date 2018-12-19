@@ -11,10 +11,10 @@ export class ChatFormulaireComponent implements OnInit {
   public texte: string;
 
   constructor() {
-  this.nouveauMessage = new EventEmitter<Message>();
+    this.nouveauMessage = new EventEmitter<Message>();
   }
- ngOnInit() {
-  this.texte = '';
+  ngOnInit() {
+    this.texte = '';
   }
   public envoyer(): void {
     const message = new Message();
@@ -22,5 +22,5 @@ export class ChatFormulaireComponent implements OnInit {
     message.date = new Date();
     message.texte = this.texte;
     this.nouveauMessage.emit(message);
-    }
+  }
 }
