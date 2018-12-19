@@ -1,7 +1,9 @@
-<p>
-    <label>Votre message:</label>
-    <input type="text" name="message" [(ngModel)]="texte">
-    <button type="button" (click)="envoyer()">envoyer</button>
-    
-</p>
 
+
+
+<div class="input-group mb-3">
+        <input type="text" name="message"[(ngModel)]="texte" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="envoyer()">Envoyer</button>
+        </div>
+      </div>
