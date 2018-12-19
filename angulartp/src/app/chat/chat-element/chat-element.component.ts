@@ -8,7 +8,7 @@ import { Message } from '../models/message';
 })
 export class ChatElementComponent implements OnInit {
   @Input() public message: Message;
-  constructor() { }
+  constructor() { this.message=new Message();}
 
   ngOnInit() {
   }
